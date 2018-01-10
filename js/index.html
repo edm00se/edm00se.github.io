@@ -29,7 +29,7 @@
         <img class="img-circle" src="${json.avatar_url}"><br />
         <h1>${json.name}</h1>
         <h3>@${json.login}</h3>
-        <p>${json.bio}</p>
+        <p>${json.bio.replace(/\n/gmi,`<br />`)}</p>
         `;
       })
       .catch(err => console.error(err));
