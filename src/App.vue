@@ -1,0 +1,37 @@
+<template>
+  <div id="app">
+    <!-- <img class="whoami img-circle" src="./assets/DarthEnrique.jpg"> -->
+    <About/>
+  </div>
+</template>
+
+<script>
+import About from './components/About';
+
+export default {
+  name: 'App',
+  components: {
+    About
+  }
+};
+</script>
+
+<style>
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
+.img-circle {
+  border-radius: 50%;
+}
+.whoami {
+  max-width: 50%;
+}
+[v-cloak] {
+  display: none;
+}
+</style>
