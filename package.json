@@ -13,7 +13,8 @@
     "lint": "eslint --ext .js,.vue src test/unit",
     "build": "node build/build.js",
     "build:gh-files": "cpy '.nojekyll' dist && cpy 'CNAME' dist",
-    "deploy": "npm run build && npm run build:gh-files && gh-pages -d dist -b master -t"
+    "deploy": "npm run build && npm run build:gh-files && gh-pages -d dist -b master -t",
+    "deploy:travis": "npm run build && gh-pages --repo https://$GH_TOKEN@github.com/edm00se/edm00se.github.io.git -d dist -b master -t"
   },
   "dependencies": {
     "vue": "^2.5.2"
