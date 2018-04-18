@@ -4,7 +4,6 @@ cache:
     - "node_modules"
 node_js:
   - lts/*
-sudo: true
 branches:
   only:
     - source
