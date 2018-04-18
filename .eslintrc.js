@@ -29,6 +29,7 @@ module.exports = {
     'arrow-parens': 0,
     'no-console': 0,
     'quotes': 0,
+    'linebreak-style': 1,
     // don't require .vue extension when importing
     'import/extensions': ['error', 'always', {
       js: 'never',
