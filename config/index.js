@@ -3,7 +3,7 @@
 // see http://vuejs-templates.github.io/webpack for documentation.
 
 const path = require('path')
-const distPath = '../docs';
+const distPath = '../dist';
 
 module.exports = {
   dev: {
