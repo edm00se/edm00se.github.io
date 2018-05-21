@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <!-- <img class="whoami img-circle" src="./assets/DarthEnrique.jpg"> -->
     <About/>
   </div>
 </template>
@@ -27,9 +26,6 @@ export default {
 }
 .img-circle {
   border-radius: 50%;
-}
-.whoami {
-  max-width: 50%;
 }
 [v-cloak] {
   display: none;

@@ -1,14 +1,26 @@
 <template>
   <div v-cloak v-show="loadingComplete" class="about">
-    <img class="whoami img-circle" :src="user.avatar_url">
-    <h1>{{user.name}}</h1>
-    <a href="https://github.com/edm00se"><h3>@{{user.login}}</h3></a>
-    <p v-html="user.bio_escapified"></p>
+    <div class="main">
+      <div class="who">
+        <img class="whoami img-circle" :src="user.avatar_url">
+        <h1>{{user.name}}</h1>
+        <a href="https://github.com/edm00se"><h3>@{{user.login}}</h3></a>
+        <p v-html="user.bio_escapified"></p>
+      </div>
+      <hr>
+      <Links/>
+    </div>
   </div>
 </template>
 
 <script>
+import Links from './Links';
+
 export default {
+  name: 'About',
+  components: {
+    Links
+  },
   data() {
     return {
       user: {},
@@ -32,6 +44,9 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.whoami {
+  max-width: 100%;
+}
 h1,
 h2 {
   font-weight: normal;
@@ -39,5 +54,17 @@ h2 {
 a,
 a:visited {
   color: #d07922;
+}
+
+@media (min-width: 768px) {
+  .main {
+    display: flex;
+  }
+  .main .who, .main .links {
+    flex: 1;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    align-self: center;
+  }
 }
 </style>
