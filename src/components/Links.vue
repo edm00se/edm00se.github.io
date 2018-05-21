@@ -23,6 +23,31 @@ export default {
           title: 'misc',
           href: '/misc/',
           descrip: `micro-blog for non-software things`
+        },
+        // {
+        //   title: 'demos',
+        //   href: '/demos/',
+        //   descrip: `home to one-off demos`
+        // },
+        {
+          title: 'presos',
+          href: '/presentations/',
+          descrip: `a home for my speaking materials`
+        },
+        {
+          title: 'board games',
+          href: '/awesome-board-games/',
+          descrip: `an awesome list for board games`
+        },
+        {
+          title: 'presto-preso',
+          href: '/generator-presto-preso/',
+          descrip: `a yeoman generator for smart presentation repos`
+        },
+        {
+          title: 'ama',
+          href: '/ama/',
+          descrip: `ask my (nearly) anything`
         }
       ]
     };
@@ -31,6 +56,13 @@ export default {
 </script>
 
 <style>
+.links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  align-self: auto;
+}
 a.link-of-links {
   color: black;
   position: relative;
@@ -65,13 +97,5 @@ a.link-of-links:hover:before {
   display: block;
   text-decoration: none;
 }
-@media (min-width: 40rem) {
-  .links {
-    display: flex;
-    flex-direction: column;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-  }
-}
+
 </style>

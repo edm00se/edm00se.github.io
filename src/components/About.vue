@@ -2,9 +2,12 @@
   <div v-cloak v-show="loadingComplete" class="about">
     <div class="main">
       <div class="who">
-        <img class="whoami img-circle" :src="user.avatar_url">
-        <h1>{{user.name}}</h1>
-        <a href="https://github.com/edm00se"><h3>@{{user.login}}</h3></a>
+        <img class="whoami img-circle" :src="user.avatar_url"
+          alt="@edm00se profile pic from GitHub">
+        <a class="user" href="https://github.com/edm00se">
+          <h1>{{user.name}}</h1>
+          <h3>@{{user.login}}</h3>
+        </a>
         <p v-html="user.bio_escapified"></p>
       </div>
       <hr>
@@ -53,6 +56,13 @@ h2 {
 }
 a,
 a:visited {
+  color: #d07922;
+}
+.user, .user h1 {
+  text-decoration: none;
+  color: #2c3e50;
+}
+.user h3 {
   color: #d07922;
 }
 
