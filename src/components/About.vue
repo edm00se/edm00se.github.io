@@ -56,7 +56,7 @@ a:visited {
   color: #d07922;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .main {
     display: flex;
   }
