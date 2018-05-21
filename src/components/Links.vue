@@ -31,7 +31,7 @@ export default {
         // },
         {
           title: 'presos',
-          href: '/presentations/',
+          href: 'https://github.com/edm00se/presentations/',
           descrip: `a home for my speaking materials`
         },
         {
@@ -41,12 +41,12 @@ export default {
         },
         {
           title: 'presto-preso',
-          href: '/generator-presto-preso/',
+          href: 'https://github.com/edm00se/generator-presto-preso/',
           descrip: `a yeoman generator for smart presentation repos`
         },
         {
           title: 'ama',
-          href: '/ama/',
+          href: 'https://github.com/edm00se/ama/',
           descrip: `ask my (nearly) anything`
         }
       ]
