@@ -12,6 +12,7 @@
     "test": "npm run unit",
     "format": "prettier src/* --write",
     "lint": "eslint --ext .js,.vue src test/unit",
+    "lint:fix": "eslint --ext .js,.vue src test/unit --fix",
     "build": "node build/build.js",
     "build:gh-files": "cpy '.nojekyll' dist && cpy 'CNAME' dist && npm run 404",
     "deploy": "npm run build && npm run build:gh-files && gh-pages -d dist -b master -t",
@@ -80,6 +81,6 @@
   "browserslist": [
     "> 1%",
     "last 2 versions",
-    "not ie <= 8"
+    "not ie <= 11"
   ]
 }
