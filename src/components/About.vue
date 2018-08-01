@@ -10,7 +10,7 @@
         </a>
         <p v-html="user.bio_escapified"></p>
       </div>
-      <hr>
+      <hr class="separator">
       <Links/>
     </div>
   </div>
@@ -47,34 +47,44 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.whoami {
-  max-width: 100%;
-}
-h1,
-h2 {
-  font-weight: normal;
-}
-a,
-a:visited {
-  color: #d07922;
-}
-.user, .user h1 {
-  text-decoration: none;
-  color: #2c3e50;
-}
-.user h3 {
-  color: #d07922;
-}
+  .whoami {
+    max-width: 100%;
+  }
+  h1,
+  h2 {
+    font-weight: normal;
+  }
+  a,
+  a:visited {
+    color: #d07922;
+  }
+  .user, .user h1 {
+    text-decoration: none;
+    color: #2c3e50;
+  }
+  .user h3 {
+    color: #d07922;
+  }
 
-@media (min-width: 769px) {
-  .main {
-    display: flex;
+  @media (min-width: 769px) {
+    .main {
+      display: flex;
+    }
+    .main .who, .main .links {
+      flex: 1;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      align-self: center;
+    }
   }
-  .main .who, .main .links {
-    flex: 1;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    align-self: center;
+  hr.separator {
+    transition: 0.5s;
+    animation-name: fade-in;
+    animation-fill-mode: both;
+    animation-duration: 0.5s;
   }
-}
+  @keyframes fade-in {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
 </style>
