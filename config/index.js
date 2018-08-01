@@ -43,6 +43,19 @@ module.exports = {
 
     cssSourceMap: true
   },
+  
+  module: {
+    rules: [
+      {
+        test: /\.scss$/,
+        use: [
+          'vue-style-loader',
+          'css-loader',
+          'sass-loader'
+        ]
+      }
+    ]
+  },
 
   build: {
     // Template for index.html
