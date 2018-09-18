@@ -5,7 +5,6 @@ cache:
 node_js:
   - lts/*
 branches:
-  only:
-  - source
+  only: source
 script:
   - npm run deploy:travis
