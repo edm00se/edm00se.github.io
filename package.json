@@ -14,8 +14,9 @@
     "dev": "parcel ./src/index.html",
     "start": "npm run dev",
     "format": "prettier --write \"src/**/*.{vue,js}\"",
-    "build": "parcel build ./src/index.html --public-url .",
-    "build:ci": "parcel build ./src/index.html --public-url . --log-level 2",
+    "build": "npm run clean && parcel build ./src/index.html --public-url .",
+    "build:ci": "npm run clean && parcel build ./src/index.html --public-url . --log-level 2",
+    "build:sw": "rimraf dist/sw.js && workbox injectManifest config/workbox-config.js",
     "test": "jest --config config/tests/jest.conf.js --coverage",
     "test:watch": "jest --config config/tests/jest.conf.js --coverage --watch"
   },
@@ -39,11 +40,13 @@
     "node-sass": "^4.9.4",
     "parcel-bundler": "^1.10.3",
     "prettier": "^1.14.3",
-    "rimraf": "^2.6.2",
+    "rimraf": "2.6.2",
+    "sass": "1.14.3",
     "vue-hot-reload-api": "^2.3.1",
     "vue-jest": "^3.0.0",
     "vue-server-renderer": "^2.5.17",
-    "vue-template-compiler": "^2.5.17"
+    "vue-template-compiler": "^2.5.17",
+    "workbox-cli": "3.6.3"
   },
   "engines": {
     "node": ">= 6.9.0 || >= 8.9.0",
