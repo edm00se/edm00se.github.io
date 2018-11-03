@@ -17,6 +17,7 @@
 </template>
 
 <script>
+import axios from 'axios';
 import Links from './Links';
 
 export default {
@@ -33,11 +34,11 @@ export default {
   mounted() {
     const userName = 'edm00se';
     const url = `https://api.github.com/users/${userName}`;
-    fetch(url)
-      .then(response => response.json())
-      .then(json => {
-        this.user = json;
-        this.user.bio_escapified = json.bio.replace(/\n/gim, `<br />`);
+    axios.get(url)
+      .then(res => {
+        const data = res.data;
+        this.user = data;
+        this.user.bio_escapified = data.bio.replace(/\n/gim, `<br />`);
         this.loadingComplete = true;
       })
       .catch(err => console.error(err));
