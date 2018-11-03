@@ -7,8 +7,8 @@ node_js:
 branches:
   only: source
 script:
-  - npm run deploy
-  - touch dist/.nojekyll
+  - npm run build:ci
+  - cp public/404.html dist/.
 deploy:
   provider: pages
   local-dir: dist
