@@ -1,0 +1,35 @@
+{
+  "name": "edm00se.codes",
+  "short_name": "edm00se.codes",
+  "start_url": "index.html",
+  "display": "standalone",
+  "theme_color": "#d07922",
+  "background_color": "#fff",
+  "icons": [
+    {
+      "src": "assets/icons/57X57-icon.png",
+      "sizes": "57x57",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/icons/72X72-icon.png",
+      "sizes": "72x72",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/icons/114X114-icon.png",
+      "sizes": "114x114",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/icons/144X144-icon.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/icons/512X512-icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

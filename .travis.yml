@@ -9,6 +9,7 @@ branches:
 script:
   - npm run build:ci
   - cp public/404.html dist/.
+  - npm run build:sw
   - touch dist/.nojekyll
 deploy:
   provider: pages
