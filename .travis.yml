@@ -16,5 +16,6 @@ deploy:
   github-token: $GH_TOKEN  # Set in the settings page of your repository, as a secure variable
   keep-history: true
   fqdn: edm00se.codes
+  target-branch: master
   on:
-    branch: master
+    branch: source
