@@ -2,7 +2,7 @@
   <div v-cloak v-show="loadingComplete" class="about">
     <div class="main">
       <div class="who">
-        <a class="user" href="https://github.com/edm00se">
+        <a class="user" :href="user.html_url">
           <img class="whoami img-circle" :src="user.avatar_url"
             alt="@edm00se profile pic from GitHub">
           <h1>{{user.name}}</h1>
