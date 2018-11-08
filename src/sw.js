@@ -1,4 +1,4 @@
-// stub for prod sw w/ parcel
+// advanced config for injectManifest approach
 importScripts('https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js');
 
 workbox.precaching.precacheAndRoute([]);
