@@ -6,5 +6,3 @@ module.exports = {
   "swDest": "dist/sw.js",
   "swSrc": "src/sw.js"
 };
-
-// TODO: write cache and/or fallback option for https://api.github.com/users/${userName}
