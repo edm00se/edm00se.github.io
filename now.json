@@ -1,5 +1,8 @@
 {
+  "version": 2,
   "name": "edm00se.codes",
-  "type": "static",
-  "public": true
+  "public": true,
+  "builds": [
+    { "src": "package.json", "use": "@now/static-build" }
+  ]
 }

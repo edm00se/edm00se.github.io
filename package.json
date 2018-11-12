@@ -18,7 +18,8 @@
     "build:ci": "npm run clean && parcel build ./src/index.html --public-url . --log-level 2",
     "build:sw": "rimraf dist/sw.js && workbox injectManifest config/workbox-config.js",
     "test": "jest --config config/tests/jest.conf.js --coverage",
-    "test:watch": "jest --config config/tests/jest.conf.js --coverage --watch"
+    "test:watch": "jest --config config/tests/jest.conf.js --coverage --watch",
+    "now-build": "npm run build:ci && cp public/404.html dist/. && npm run build:sw"
   },
   "dependencies": {
     "axios": "^0.18.0",
