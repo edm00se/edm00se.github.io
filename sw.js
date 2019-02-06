@@ -36,15 +36,15 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "index.html",
-    "revision": "2e1e7b12f70b98ffbd9e75d7294fa327"
+    "revision": "1fb6d1f0651e3a0b9617037084b75e7d"
   },
   {
-    "url": "main.c7583588.css",
+    "url": "main.62ea5f90.js",
+    "revision": "b1e5e9b7a32e33fe7b576b77504ac4cd"
+  },
+  {
+    "url": "main.ddf83ee4.css",
     "revision": "563028f5546e764930ff6b4617573ab3"
-  },
-  {
-    "url": "main.ff012c62.js",
-    "revision": "64a59f8416634f189f8a4eaba464e470"
   }
 ]);
 
