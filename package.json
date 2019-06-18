@@ -26,7 +26,7 @@
     "vue": "2.6.10"
   },
   "devDependencies": {
-    "@babel/core": "7.2.2",
+    "@babel/core": "7.4.5",
     "@vue/component-compiler-utils": "2.5.0",
     "babel-jest": "^24.8.0",
     "babel-loader": "8.0.5",
