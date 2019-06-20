@@ -69,4 +69,4 @@ module.exports=require("./lib/axios");
 },{"./components/About":"oI0t"}],"epB2":[function(require,module,exports) {
 "use strict";var e=n(require("vue")),r=n(require("./App"));function n(e){return e&&e.__esModule?e:{default:e}}e.default.config.productionTip=!1,new e.default({el:"#app",render:function(e){return e(r.default)}}),"serviceWorker"in navigator&&window.addEventListener("load",function(){navigator.serviceWorker.register("sw.js").then(function(e){}).catch(function(e){return console.log("SW error: ",e)})});
 },{"vue":"QPfz","./App":"Js2s","./sw.js":[["sw.js","NqYy"],"sw.js.map","NqYy"]}]},{},["epB2"], null)
-//# sourceMappingURL=main.c59f884f.js.map
+//# sourceMappingURL=main.b4f5a862.js.map
