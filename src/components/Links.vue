@@ -35,7 +35,7 @@ export default {
           descrip: `a home for my speaking materials`
         },
         {
-          title: 'board games',
+          title: 'awesome board games',
           href: '/awesome-board-games/',
           descrip: `an awesome list for board games`
         },
