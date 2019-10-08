@@ -21,7 +21,7 @@ export default {
         },
         {
           title: 'misc',
-          href: '/misc/',
+          href: 'https://misc.edm00se.codes/',
           descrip: `micro-blog for non-software things`
         },
         // {
