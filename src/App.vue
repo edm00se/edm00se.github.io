@@ -9,6 +9,7 @@ import About from './components/About';
 
 export default {
   name: 'App',
+  title: 'edm00se.codes',
   components: {
     About
   }
