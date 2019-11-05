@@ -4,5 +4,6 @@
   "public": true,
   "builds": [
     { "src": "package.json", "use": "@now/static-build" }
-  ]
+  ],
+  "alias": "codes.edm00se.now.sh"
 }
