@@ -22,7 +22,7 @@
     "now-build": "npm run build:ci && cp public/404.html dist/. && npm run build:sw"
   },
   "dependencies": {
-    "axios": "^0.19.1",
+    "axios": "^0.19.2",
     "vue": "2.6.11"
   },
   "devDependencies": {
@@ -33,12 +33,12 @@
     "@vue/babel-plugin-transform-vue-jsx": "^1.1.2",
     "@vue/component-compiler-utils": "^3.1.1",
     "babel-core": "^7.0.0-bridge.0",
-    "babel-jest": "^24.9.0",
+    "babel-jest": "^25.1.0",
     "babel-loader": "^8.0.6",
-    "husky": "^4.0.10",
-    "jest": "^24.9.0",
+    "husky": "^4.2.1",
+    "jest": "^25.1.0",
     "jest-serializer-vue": "^2.0.2",
-    "lint-staged": "^10.0.0",
+    "lint-staged": "^10.0.3",
     "parcel-bundler": "^1.12.4",
     "prettier": "^1.19.1",
     "rimraf": "^3.0.0",
