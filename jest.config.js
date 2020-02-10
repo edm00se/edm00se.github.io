@@ -15,6 +15,6 @@ module.exports = {
     'src/**/*.{js,vue}',
     '!**/node_modules/**',
     '!src/main.js',
-    '!src/sw.js'
+    '!config/sw.js'
   ]
 };
