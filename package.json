@@ -26,7 +26,7 @@
     "vue": "2.6.11"
   },
   "devDependencies": {
-    "@babel/core": "^7.8.3",
+    "@babel/core": "^7.8.4",
     "@babel/plugin-transform-modules-commonjs": "^7.8.3",
     "@babel/preset-env": "^7.8.3",
     "@vue/babel-helper-vue-jsx-merge-props": "^1.0.0",
