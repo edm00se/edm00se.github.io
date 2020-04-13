@@ -74,4 +74,4 @@ module.exports=require("./lib/axios");
 },{"./../assets/omg404.svg":[["omg404.b6972311.svg","SMpS"],"SMpS"]}],"epB2":[function(require,module,exports) {
 "use strict";var e=i(require("vue")),t=i(require("./mixins/title")),n=i(require("./App")),r=i(require("./components/404"));function i(e){return e&&e.__esModule?e:{default:e}}var o={"/":n.default,"/404":r.default};e.default.config.productionTip=!1,e.default.mixin(t.default),new e.default({el:"#app",data:{currentRoute:window.location.pathname},computed:{ViewComponent:function(){return o[this.currentRoute]||r.default}},render:function(e){return e(this.ViewComponent)}}),"serviceWorker"in navigator&&window.addEventListener("load",function(){navigator.serviceWorker.register("sw.js").then(function(e){}).catch(function(e){return console.log("SW error: ",e)})});
 },{"vue":"QPfz","./mixins/title":"wvHQ","./App":"Js2s","./components/404":"fWNK","./sw.js":[["sw.js","NqYy"],"sw.js.map","NqYy"]}]},{},["epB2"], null)
-//# sourceMappingURL=main.82182dc4.js.map
+//# sourceMappingURL=main.b9912d9b.js.map
