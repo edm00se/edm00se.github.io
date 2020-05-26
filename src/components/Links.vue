@@ -36,7 +36,7 @@ export default {
         },
         {
           title: 'awesome board games',
-          href: '/awesome-board-games/',
+          href: 'https://awesomeboard.games/',
           descrip: `an awesome list for board games`
         },
         {
