@@ -40,9 +40,9 @@ export default {
           descrip: `an awesome list for board games`
         },
         {
-          title: 'presto-preso',
-          href: 'https://github.com/edm00se/generator-presto-preso/',
-          descrip: `a yeoman generator for smart presentation repos`
+          title: 'parcel-plugin-goodie-bag',
+          href: 'https://github.com/edm00se/parcel-plugin-goodie-bag/',
+          descrip: `provides the Promise and fetch goodies needed for IE(11) support w/ parcel bundle loading`
         },
         {
           title: 'ama',
