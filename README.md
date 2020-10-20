@@ -1,5 +1,5 @@
 # [edm00se.codes][my-url]
-[![Build Status](https://travis-ci.org/edm00se/edm00se.github.io.svg?branch=source)](https://travis-ci.org/edm00se/edm00se.github.io)
+![Deploy to GitHub Pages](https://github.com/edm00se/edm00se.github.io/workflows/Deploy%20to%20GitHub%20Pages/badge.svg)
 
 > My GitHub user homepage, under the custom domain name of [edm00se.codes][my-url].
 
