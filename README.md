@@ -1,5 +1,5 @@
 # [edm00se.codes][my-url]
-![Deploy to GitHub Pages](https://github.com/edm00se/edm00se.github.io/workflows/Deploy%20to%20GitHub%20Pages/badge.svg)
+[![Deploy to GitHub Pages](https://github.com/edm00se/edm00se.github.io/workflows/Deploy%20to%20GitHub%20Pages/badge.svg)](https://github.com/edm00se/edm00se.github.io/actions?query=workflow%3A%22Deploy+to+GitHub+Pages%22)
 
 > My GitHub user homepage, under the custom domain name of [edm00se.codes][my-url].
 
