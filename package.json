@@ -47,7 +47,7 @@
     "vue-jest": "^3.0.7",
     "vue-server-renderer": "^2.6.12",
     "vue-template-compiler": "^2.6.12",
-    "workbox-build": "^5.1.4"
+    "workbox-build": "^6.0.2"
   },
   "engines": {
     "node": ">= 6.9.0 || >= 8.9.0",
