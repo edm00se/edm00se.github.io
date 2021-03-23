@@ -15,7 +15,7 @@
     "start": "npm run dev",
     "format": "prettier --write \"src/**/*.{vue,js}\"",
     "build": "npm run clean && parcel build ./src/index.html --public-url . --experimental-scope-hoisting",
-    "build:ci": "npm run clean && npm run build -- --log-level 2",
+    "build:ci": "npm run clean && npx browserslist@latest --update-db && npm run build -- --log-level 2",
     "build:sw": "rimraf dist/sw.js && node config/workbox-config.js",
     "test": "jest --coverage",
     "test:watch": "jest --coverage --watch",
