@@ -1,24 +1,16 @@
 <template>
   <div id="app">
-    <About/>
+    <About />
   </div>
 </template>
 
-<script>
-import About from './components/About';
-
-export default {
-  name: 'App',
-  title: 'edm00se.codes',
-  components: {
-    About
-  }
-};
+<script setup>
+import About from './components/About.vue';
 </script>
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
