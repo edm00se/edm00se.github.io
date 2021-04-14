@@ -1,57 +1,26 @@
 {
   "name": "edm00se.codes",
-  "version": "1.0.0",
-  "description": "edm00se GitHub user homepage",
-  "main": "src/main.js",
+  "version": "2.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "vue": "^3.0.5"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^1.2.1",
+    "@vue/compiler-sfc": "^3.0.5",
+    "sass": "^1.32.8",
+    "vite": "^2.1.5"
+  },
   "private": false,
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/edm00se/edm00se.github.io.git"
-  },
-  "scripts": {
-    "clean": "rimraf dist",
-    "dev": "parcel ./src/index.html",
-    "start": "npm run dev",
-    "format": "prettier --write \"src/**/*.{vue,js}\"",
-    "build": "npm run clean && parcel build ./src/index.html --public-url . --experimental-scope-hoisting",
-    "build:ci": "npm run clean && npm run build -- --log-level 2",
-    "build:sw": "rimraf dist/sw.js && node config/workbox-config.js",
-    "test": "jest --coverage",
-    "test:watch": "jest --coverage --watch",
-    "vercel-build": "npm run build:ci && cp public/404.html dist/. && npm run build:sw"
-  },
-  "dependencies": {
-    "axios": "^0.21.1",
-    "vue": "2.6.12"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.13.15",
-    "@babel/plugin-transform-modules-commonjs": "^7.13.8",
-    "@babel/preset-env": "^7.13.8",
-    "@vue/babel-helper-vue-jsx-merge-props": "^1.2.1",
-    "@vue/babel-plugin-transform-vue-jsx": "^1.2.1",
-    "@vue/component-compiler-utils": "^3.2.0",
-    "babel-core": "^7.0.0-bridge.0",
-    "babel-jest": "^26.6.3",
-    "babel-loader": "^8.2.2",
-    "husky": "^6.0.0",
-    "jest": "^26.6.3",
-    "jest-serializer-vue": "^2.0.2",
-    "lint-staged": "^10.5.4",
-    "parcel-bundler": "^1.12.4",
-    "prettier": "^2.2.1",
-    "rimraf": "^3.0.2",
-    "sass": "^1.32.8",
-    "vue-hot-reload-api": "^2.3.4",
-    "vue-jest": "^3.0.7",
-    "vue-server-renderer": "^2.6.12",
-    "vue-template-compiler": "^2.6.12",
-    "workbox-build": "^6.1.2"
-  },
-  "engines": {
-    "node": ">= 6.9.0 || >= 8.9.0",
-    "npm": ">= 3.10.8"
   },
   "browserslist": [
     "> 1%",
