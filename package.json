@@ -7,7 +7,8 @@
     "serve": "vite preview",
     "clean": "rimraf dist",
     "build:sw": "node util/workbox-config.js",
-    "build:prod": "run-s clean build build:sw"
+    "build:prod": "run-s clean build build:sw",
+    "vercel-build": "npm run build:prod"
   },
   "dependencies": {
     "axios": "^0.21.1",
