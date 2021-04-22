@@ -4,7 +4,11 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "clean": "rimraf dist",
+    "build:sw": "node util/workbox-config.js",
+    "build:prod": "run-s clean build build:sw",
+    "vercel-build": "npm run build:prod"
   },
   "dependencies": {
     "axios": "^0.21.1",
@@ -13,8 +17,11 @@
   "devDependencies": {
     "@vitejs/plugin-vue": "^1.2.1",
     "@vue/compiler-sfc": "^3.0.5",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^3.0.2",
     "sass": "^1.32.10",
-    "vite": "^2.1.5"
+    "vite": "^2.1.5",
+    "workbox-build": "^6.1.5"
   },
   "private": false,
   "license": "MIT",
