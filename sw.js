@@ -4,7 +4,7 @@ importScripts(
 );
 
 workbox.setConfig({
-  debug: true
+  debug: false
 });
 
 // workbox.googleAnalytics.initialize();
