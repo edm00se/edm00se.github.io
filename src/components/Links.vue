@@ -56,6 +56,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@use "sass:math";
+
 .links {
   display: flex;
   flex-direction: column;
@@ -106,7 +108,7 @@ a.link-of-links:hover:before {
 $animationDelay: 1;
 @for $i from 1 through 15 {
   .link:nth-of-type(#{$i}) {
-    animation-delay: #{0.3+ ($i)/30}s;
+    animation-delay: #{0.3+ math.div($i,30)}s;
   }
 }
 
