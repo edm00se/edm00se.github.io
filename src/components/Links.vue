@@ -10,7 +10,32 @@
 </template>
 
 <script>
+function isTouchDevice() {
+  return (
+    'ontouchstart' in window ||
+    navigator.maxTouchPoints > 0 ||
+    navigator.msMaxTouchPoints > 0
+  );
+}
+
 export default {
+  async mounted() {
+    if (isTouchDevice()) {
+      [...document.querySelectorAll('a.link-of-links')].forEach((el) => {
+        el.classList.add('no-touch');
+        el.addEventListener(
+          'touchstart',
+          () => el.classList.add('hover'),
+          false
+        );
+        el.addEventListener(
+          'touchend',
+          () => el.classList.remove('hover'),
+          false
+        );
+      });
+    }
+  },
   data() {
     return {
       links: [
@@ -71,7 +96,8 @@ a.link-of-links {
   color: black;
   position: relative;
 }
-a.link-of-links:hover {
+a.link-of-links:hover,
+a.link-of-links.hover {
   color: #d07922;
 }
 a.link-of-links:before {
@@ -88,7 +114,8 @@ a.link-of-links:before {
   -webkit-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
 }
-a.link-of-links:hover:before {
+a.link-of-links:hover:before,
+a.link-of-links.hover:before {
   visibility: visible;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
@@ -108,7 +135,7 @@ a.link-of-links:hover:before {
 $animationDelay: 1;
 @for $i from 1 through 15 {
   .link:nth-of-type(#{$i}) {
-    animation-delay: #{0.3+ math.div($i,30)}s;
+    animation-delay: #{0.3 + math.div($i, 30)}s;
   }
 }
 
