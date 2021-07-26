@@ -18,23 +18,22 @@ function isTouchDevice() {
   );
 }
 
+function wireTouchHoverEffect() {
+  if (isTouchDevice()) {
+    [...document.querySelectorAll('a.link-of-links')].forEach((el) => {
+      el.addEventListener('touchstart', () => el.classList.add('hover'), false);
+      el.addEventListener(
+        'touchend',
+        () => el.classList.remove('hover'),
+        false
+      );
+    });
+  }
+}
+
 export default {
-  async mounted() {
-    if (isTouchDevice()) {
-      [...document.querySelectorAll('a.link-of-links')].forEach((el) => {
-        el.classList.add('no-touch');
-        el.addEventListener(
-          'touchstart',
-          () => el.classList.add('hover'),
-          false
-        );
-        el.addEventListener(
-          'touchend',
-          () => el.classList.remove('hover'),
-          false
-        );
-      });
-    }
+  mounted() {
+    wireTouchHoverEffect();
   },
   data() {
     return {
