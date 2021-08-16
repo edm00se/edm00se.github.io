@@ -21,7 +21,7 @@
     "rimraf": "^3.0.2",
     "sass": "^1.37.5",
     "vite": "^2.5.0",
-    "workbox-build": "^6.2.3"
+    "workbox-build": "^6.2.4"
   },
   "private": false,
   "license": "MIT",
