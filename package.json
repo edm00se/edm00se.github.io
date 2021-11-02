@@ -11,7 +11,7 @@
     "vercel-build": "npm run build:prod"
   },
   "dependencies": {
-    "axios": "^0.23.0",
+    "axios": "^0.24.0",
     "vue": "^3.2.20"
   },
   "devDependencies": {
