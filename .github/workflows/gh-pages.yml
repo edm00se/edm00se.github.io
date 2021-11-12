@@ -21,10 +21,8 @@ jobs:
           npm ci
           npm run build
           npm run build:sw --if-present
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@4.1.5
         with:
-          personal_token: ${{ secrets.PERSONAL_TOKEN }}
-          publish_dir: ./dist
-          publish_branch: master
-          cname: edm00se.codes
+          branch: master
+          folder: dist
