@@ -4,5 +4,8 @@
   "public": true,
   "builds": [{ "src": "package.json", "use": "@vercel/static-build" }],
   "alias": "codes.edm00se.now.sh",
-  "cleanUrls": true
+  "cleanUrls": true,
+  "github": {
+    "silent": true
+  }
 }
