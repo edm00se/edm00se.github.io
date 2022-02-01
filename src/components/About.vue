@@ -53,7 +53,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .whoami {
-  max-width: 100%;
+  max-width: 50vw;
 }
 h1,
 h2 {
