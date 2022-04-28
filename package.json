@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "axios": "^0.26.1",
-    "vue": "^3.2.31"
+    "vue": "^3.2.33"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^2.3.1",
