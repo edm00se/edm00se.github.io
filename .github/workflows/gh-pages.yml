@@ -12,9 +12,9 @@ jobs:
       - uses: actions/checkout@master
 
       - name: Setup Node
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v3
         with:
-          node-version: 14
+          node-version: 16
 
       - name: Build
         run: |
@@ -22,7 +22,7 @@ jobs:
           npm run build
           npm run build:sw --if-present
       - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@4.1.7
+        uses: JamesIves/github-pages-deploy-action@v4.3.3
         with:
           branch: master
           folder: dist
