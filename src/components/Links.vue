@@ -48,15 +48,10 @@ export default {
           href: 'https://misc.edm00se.codes/',
           descrip: `micro-blog for non-software things`
         },
-        // {
-        //   title: 'demos',
-        //   href: '/demos/',
-        //   descrip: `home to one-off demos`
-        // },
         {
-          title: 'presos',
-          href: 'https://github.com/edm00se/presentations/',
-          descrip: `a home for my speaking materials`
+          title: 'ama',
+          href: 'https://github.com/edm00se/ama/',
+          descrip: `ask me (nearly) anything`
         },
         {
           title: 'awesome board games',
@@ -64,15 +59,20 @@ export default {
           descrip: `an awesome list for board games`
         },
         {
-          title: 'parcel-plugin-goodie-bag',
-          href: 'https://github.com/edm00se/parcel-plugin-goodie-bag/',
-          descrip: `provides the Promise and fetch goodies needed for IE(11) support w/ parcel bundle loading`
+          title: 'demos',
+          href: '/demos/',
+          descrip: `home to one-off demos`
         },
         {
-          title: 'ama',
-          href: 'https://github.com/edm00se/ama/',
-          descrip: `ask me (nearly) anything`
+          title: 'presos',
+          href: 'https://github.com/edm00se/presentations/',
+          descrip: `a home for my speaking materials`
         }
+        // {
+        //   title: 'parcel-plugin-goodie-bag',
+        //   href: 'https://github.com/edm00se/parcel-plugin-goodie-bag/',
+        //   descrip: `provides the Promise and fetch goodies needed for IE(11) support w/ parcel bundle loading`
+        // },
       ]
     };
   }
