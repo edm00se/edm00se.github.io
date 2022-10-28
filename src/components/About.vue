@@ -12,6 +12,8 @@
           <h3>@{{ user.login }}</h3>
         </a>
         <p v-html="user.bio_escapified"></p>
+        <hr class="social-dist" />
+        <Socials />
       </div>
       <hr class="separator" />
       <Links />
@@ -22,10 +24,12 @@
 <script>
 import axios from 'axios';
 import Links from './Links.vue';
+import Socials from './Socials.vue';
 
 export default {
   name: 'About',
   components: {
+    Socials,
     Links
   },
   data() {
@@ -72,6 +76,17 @@ a:visited {
   color: #d07922;
 }
 
+hr.separator {
+  transition: 0.5s;
+  animation-name: fade-in;
+  animation-fill-mode: both;
+  animation-duration: 0.5s;
+}
+
+hr.social-dist {
+  display: none;
+}
+
 @media (min-width: 769px) {
   .main {
     display: flex;
@@ -83,12 +98,13 @@ a:visited {
     padding-right: 1rem;
     align-self: center;
   }
-}
-hr.separator {
-  transition: 0.5s;
-  animation-name: fade-in;
-  animation-fill-mode: both;
-  animation-duration: 0.5s;
+  hr.social-dist {
+    display: inherit;
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+  }
 }
 @keyframes fade-in {
   0% {
