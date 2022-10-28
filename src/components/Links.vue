@@ -63,11 +63,11 @@ export default {
           href: '/demos/',
           descrip: `home to one-off demos`
         },
-        {
-          title: 'presos',
-          href: 'https://github.com/edm00se/presentations/',
-          descrip: `a home for my speaking materials`
-        }
+        // {
+        //   title: 'presos',
+        //   href: 'https://github.com/edm00se/presentations/',
+        //   descrip: `a home for my speaking materials`
+        // },
         // {
         //   title: 'parcel-plugin-goodie-bag',
         //   href: 'https://github.com/edm00se/parcel-plugin-goodie-bag/',
