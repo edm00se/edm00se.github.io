@@ -14,7 +14,7 @@ This page is built with [vite][vitejs].
 # install dependencies
 npm install
 
-# serve with hot reload at localhost:1234
+# serve with hot reload at localhost:3000
 npm run dev
 
 # build for production with minification
