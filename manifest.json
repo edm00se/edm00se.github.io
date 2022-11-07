@@ -1,10 +1,17 @@
 {
   "index.html": {
-    "file": "assets/index.4c42f17f.js",
+    "file": "assets/index.952da9e9.js",
     "src": "index.html",
     "isEntry": true,
     "css": [
-      "assets/index.91566699.css"
+      "assets/index.dd7455d7.css"
+    ],
+    "assets": [
+      "assets/remixicon.64bb3a0f.eot",
+      "assets/remixicon.e61f0d10.woff2",
+      "assets/remixicon.c2dacfbc.woff",
+      "assets/remixicon.0ac8bc3c.ttf",
+      "assets/remixicon.a10268fe.svg"
     ]
   }
 }
