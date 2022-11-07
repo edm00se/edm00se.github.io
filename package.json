@@ -6,8 +6,7 @@
     "build": "vite build",
     "serve": "vite preview",
     "clean": "rimraf dist",
-    "build:sw": "node util/workbox-config.js",
-    "build:prod": "run-s clean build build:sw",
+    "build:prod": "run-s clean build",
     "vercel-build": "npm run build:prod"
   },
   "dependencies": {
@@ -21,8 +20,7 @@
     "npm-run-all": "^4.1.5",
     "rimraf": "^3.0.2",
     "sass": "^1.56.0",
-    "vite": "^2.9.14",
-    "workbox-build": "^6.5.4"
+    "vite": "^2.9.14"
   },
   "private": false,
   "license": "MIT",
