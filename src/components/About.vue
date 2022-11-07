@@ -9,12 +9,11 @@
             alt="@edm00se profile pic from GitHub"
           />
           <h1>{{ user.name }}</h1>
-          <h3>@{{ user.login }}</h3>
         </a>
         <p v-html="user.bio_escapified"></p>
       </div>
       <hr class="separator" />
-      <Links />
+      <Links :ghUser="user" />
     </div>
   </div>
 </template>
@@ -68,8 +67,24 @@ a:visited {
   text-decoration: none;
   color: #2c3e50;
 }
-.user h3 {
-  color: #d07922;
+
+hr.separator {
+  transition: 0.5s;
+  animation-name: fade-in;
+  animation-fill-mode: both;
+  animation-duration: 0.5s;
+}
+
+.social-links {
+  display: inline-flex;
+  align-items: center;
+}
+.social-links a {
+  text-decoration: none;
+}
+.social-links > * {
+  padding-left: 0.25em;
+  padding-right: 0.25em;
 }
 
 @media (min-width: 769px) {
@@ -83,12 +98,6 @@ a:visited {
     padding-right: 1rem;
     align-self: center;
   }
-}
-hr.separator {
-  transition: 0.5s;
-  animation-name: fade-in;
-  animation-fill-mode: both;
-  animation-duration: 0.5s;
 }
 @keyframes fade-in {
   0% {

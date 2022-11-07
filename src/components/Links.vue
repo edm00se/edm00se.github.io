@@ -1,5 +1,15 @@
 <template>
   <div class="links">
+    <div class="social-links">
+      <a :href="ghUser.html_url">@{{ ghUser.login }} <i class="ri-github-fill ri-xl"></i> @GitHub</a>
+      <a rel="me" href="https://honk.farm/@eric">@eric &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i class="ri-mastodon-fill ri-xl"></i> @honk.farm</a>
+      <a href="https://www.instagram.com/edm00se/">@edm00se <i class="ri-instagram-fill ri-xl"></i> @instagram</a>
+      <a href="https://twitter.com/edm00se">@edm00se <i class="ri-twitter-fill ri-xl"></i> @twitter</a>
+      <a href="https://stackoverflow.com/users/1720082/eric-mccormick">@edm00se <i class="ri-stack-overflow-fill ri-xl"></i> @stackOverflow</a>
+      <!-- <a href="https://www.linkedin.com/in/emccormick"><i class="ri-linkedin-box-fill ri-xl"></i> @emccormick @linkedin</a> -->
+      <!-- <a href="https://www.reddit.com/user/edm00se"><i class="ri-reddit-fill ri-xl"></i> @edm00se @reddit</a> -->
+    </div>
+    <hr class="link-sep" />
     <div class="link" v-for="link in links" :key="link.href">
       <a class="link-of-links" :href="link.href">
         <h3>{{ link.title }}</h3>
@@ -32,6 +42,9 @@ function wireTouchHoverEffect() {
 }
 
 export default {
+  props: {
+    ghUser: Object
+  },
   mounted() {
     wireTouchHoverEffect();
   },
@@ -63,11 +76,11 @@ export default {
           href: '/demos/',
           descrip: `home to one-off demos`
         },
-        {
-          title: 'presos',
-          href: 'https://github.com/edm00se/presentations/',
-          descrip: `a home for my speaking materials`
-        }
+        // {
+        //   title: 'presos',
+        //   href: 'https://github.com/edm00se/presentations/',
+        //   descrip: `a home for my speaking materials`
+        // },
         // {
         //   title: 'parcel-plugin-goodie-bag',
         //   href: 'https://github.com/edm00se/parcel-plugin-goodie-bag/',
@@ -91,6 +104,27 @@ export default {
   transition: 0.5s;
   right: 0;
 }
+
+.social-links {
+  display: inline-flex;
+  flex-flow: column;
+  align-items: baseline;
+
+  a,
+  a:visited {
+    color: #d07922;
+    text-decoration: none;
+  }
+}
+
+.link-sep {
+  width: 50%;
+  /* thanks CSS tricks! https://css-tricks.com/examples/hrs/ */
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
 a.link-of-links {
   color: black;
   position: relative;
