@@ -4,14 +4,14 @@
     "src": "index.html",
     "isEntry": true,
     "css": [
-      "assets/index.66be3708.css"
+      "assets/index.ecddbef7.css"
     ],
     "assets": [
-      "assets/remixicon.bc1e73c3.eot",
-      "assets/remixicon.abb3048c.woff2",
-      "assets/remixicon.5c1bfc2f.woff",
-      "assets/remixicon.d53c3ce4.ttf",
-      "assets/remixicon.b1dd0c14.svg"
+      "assets/remixicon.0d23add1.eot",
+      "assets/remixicon.5b5436e3.woff2",
+      "assets/remixicon.3fded42c.woff",
+      "assets/remixicon.305150a4.ttf",
+      "assets/remixicon.7d159401.svg"
     ]
   }
 }
