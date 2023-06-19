@@ -7,7 +7,9 @@
     "serve": "vite preview",
     "clean": "rimraf dist",
     "build:prod": "run-s clean build",
-    "vercel-build": "npm run build:prod"
+    "vercel-build": "npm run build:prod",
+    "test": "vitest",
+    "test:coverage": "vitest run --coverage"
   },
   "dependencies": {
     "axios": "^1.4.0",
@@ -16,11 +18,15 @@
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^2.3.4",
+    "@vitest/coverage-v8": "^0.32.2",
     "@vue/compiler-sfc": "^3.3.4",
+    "@vue/test-utils": "^2.3.2",
+    "jsdom": "^22.1.0",
     "npm-run-all": "^4.1.5",
     "rimraf": "^5.0.1",
     "sass": "^1.63.4",
-    "vite": "^2.9.16"
+    "vite": "^2.9.16",
+    "vitest": "^0.32.2"
   },
   "private": false,
   "license": "MIT",
