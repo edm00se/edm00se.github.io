@@ -21,7 +21,7 @@ npm run dev
 npm run build
 
 # run unit tests
-# npm run test
+npm test
 ```
 
 ## License
