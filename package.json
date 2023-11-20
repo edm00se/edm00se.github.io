@@ -1,6 +1,7 @@
 {
   "name": "edm00se.codes",
   "version": "2.0.0",
+  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -12,21 +13,21 @@
     "test:coverage": "vitest run --coverage"
   },
   "dependencies": {
-    "axios": "^1.6.1",
     "postcss": "^8.4.31",
     "remixicon": "^3.5.0",
     "vue": "^3.3.4"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^2.3.4",
+    "@vitejs/plugin-vue": "^4.5.0",
     "@vitest/coverage-v8": "^0.34.6",
     "@vue/compiler-sfc": "^3.3.8",
-    "@vue/test-utils": "^2.4.1",
+    "@vue/test-utils": "^2.4.2",
+    "axios": "^1.6.2",
     "jsdom": "^22.1.0",
     "npm-run-all": "^4.1.5",
     "rimraf": "^5.0.5",
     "sass": "^1.69.5",
-    "vite": "^2.9.16",
+    "vite": "^5.0.0",
     "vitest": "^0.34.6"
   },
   "private": false,
