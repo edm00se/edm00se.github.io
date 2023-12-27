@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "postcss": "^8.4.32",
-    "remixicon": "^3.5.0",
+    "remixicon": "^4.0.1",
     "vue": "^3.3.4"
   },
   "devDependencies": {
