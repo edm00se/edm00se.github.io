@@ -14,12 +14,12 @@
   },
   "dependencies": {
     "postcss": "^8.4.33",
-    "remixicon": "^4.0.1",
+    "remixicon": "^4.1.0",
     "vue": "^3.3.4"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^5.0.2",
-    "@vitest/coverage-v8": "^1.1.3",
+    "@vitejs/plugin-vue": "^5.0.3",
+    "@vitest/coverage-v8": "^1.2.0",
     "@vue/compiler-sfc": "^3.3.13",
     "@vue/test-utils": "^2.4.3",
     "axios": "^1.6.5",
@@ -28,7 +28,7 @@
     "rimraf": "^5.0.5",
     "sass": "^1.69.7",
     "vite": "^5.0.11",
-    "vitest": "^1.1.3"
+    "vitest": "^1.2.0"
   },
   "private": false,
   "license": "MIT",
