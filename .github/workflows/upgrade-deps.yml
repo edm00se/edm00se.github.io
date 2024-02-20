@@ -1,7 +1,7 @@
 # Inspired by:
-# - https://github.com/nhoizey/1y/blob/master/.github/workflows/update-dependencies.yml
+# - https://github.com/nhoizey/1y/blob/master/.github/workflows/upgrade-dependencies.yml
 # - https://michaelcurrin.github.io/code-cookbook/recipes/ci-cd/github-actions/workflows/node/upgrade-packages.html
-name: Update Dependencies
+name: Upgrade Dependencies
 
 on:
   workflow_dispatch:
@@ -12,7 +12,7 @@ on:
 
 jobs:
   update-packages:
-    name: Update NPM Packages
+    name: Upgrade NPM Packages
     runs-on: ubuntu-latest
     permissions:
       pull-requests: write
