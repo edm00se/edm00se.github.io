@@ -3,9 +3,13 @@ name: Upgrade Dependencies
 on:
   workflow_dispatch:
 
+concurrency:
+  group: upgrade-dependencies
+  cancel-in-progress: true
+
 jobs:
   upgrade-dependencies:
-    uses: edm00se/edm00se/.github/workflows/upgrade-dependencies.yml@master
+    uses: edm00se/edm00se/.github/workflows/upgrade-deps.yml@master
     secrets: inherit
     with:
       nodever: '20'
