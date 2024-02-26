@@ -8,7 +8,7 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  upgrade-dependencies:
+  dep-upgrade:
     uses: edm00se/edm00se/.github/workflows/upgrade-deps.yml@master
     secrets: inherit
     with:
