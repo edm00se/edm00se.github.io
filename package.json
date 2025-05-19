@@ -15,7 +15,7 @@
   "dependencies": {
     "postcss": "^8.5.3",
     "remixicon": "^4.6.0",
-    "vue": "^3.4.23"
+    "vue": "^3.5.14"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.2.4",
