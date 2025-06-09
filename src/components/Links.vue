@@ -1,13 +1,12 @@
 <template>
   <div class="links">
     <div class="social-links">
-      <a :href="ghUser.html_url">@{{ ghUser.login }} <i class="ri-github-fill ri-xl"></i> @GitHub</a>
       <a rel="me" href="https://hachyderm.io/@edm00se">@edm00se <i class="ri-mastodon-fill ri-xl"></i> @hachyderm.io</a>
+      <a href="https://pixelfed.social/edm00se">@edm00se <i class="ri-pixelfed-fill ri-xl"></i> @pixelfed.social</a>
+      <a :href="ghUser.html_url">@{{ ghUser.login }} <i class="ri-github-fill ri-xl"></i> @GitHub</a>
       <a href="https://www.instagram.com/edm00se/">@edm00se <i class="ri-instagram-fill ri-xl"></i> @instagram</a>
-      <!-- <a href="https://twitter.com/edm00se">@edm00se <i class="ri-twitter-fill ri-xl"></i> @twitter</a> -->
       <a href="https://stackoverflow.com/users/1720082/eric-mccormick">@edm00se <i class="ri-stack-overflow-fill ri-xl"></i> @stackOverflow</a>
       <!-- <a href="https://www.linkedin.com/in/emccormick"><i class="ri-linkedin-box-fill ri-xl"></i> @emccormick @linkedin</a> -->
-      <!-- <a href="https://www.reddit.com/user/edm00se"><i class="ri-reddit-fill ri-xl"></i> @edm00se @reddit</a> -->
     </div>
     <hr class="link-sep" />
     <div class="link" v-for="link in links" :key="link.href">
@@ -62,11 +61,6 @@ export default {
           descrip: `micro-blog for non-software things`
         },
         {
-          title: 'ama',
-          href: 'https://github.com/edm00se/ama/',
-          descrip: `ask me (nearly) anything`
-        },
-        {
           title: 'awesome board games',
           href: 'https://awesomeboard.games/',
           descrip: `an awesome list for board games`
@@ -75,6 +69,16 @@ export default {
           title: 'demos',
           href: '/demos/',
           descrip: `home to one-off demos`
+        },
+        {
+          title: 'uses',
+          href: '/uses/',
+          descrip: `home to my /uses info`
+        },
+        {
+          title: 'ama',
+          href: 'https://github.com/edm00se/ama/',
+          descrip: `ask me (nearly) anything`
         },
         // {
         //   title: 'presos',
