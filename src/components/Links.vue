@@ -4,7 +4,7 @@
       <a rel="me" href="https://hachyderm.io/@edm00se">@edm00se <i class="ri-mastodon-fill ri-xl"></i> @hachyderm.io</a>
       <a href="https://pixelfed.social/edm00se">@edm00se <i class="ri-pixelfed-fill ri-xl"></i> @pixelfed.social</a>
       <a :href="ghUser.html_url">@{{ ghUser.login }} <i class="ri-github-fill ri-xl"></i> @GitHub</a>
-      <a href="https://www.instagram.com/edm00se/">@edm00se <i class="ri-instagram-fill ri-xl"></i> @instagram</a>
+      <!-- <a href="https://www.instagram.com/edm00se/">@edm00se <i class="ri-instagram-fill ri-xl"></i> @instagram</a> -->
       <a href="https://stackoverflow.com/users/1720082/eric-mccormick">@edm00se <i class="ri-stack-overflow-fill ri-xl"></i> @stackOverflow</a>
       <!-- <a href="https://www.linkedin.com/in/emccormick"><i class="ri-linkedin-box-fill ri-xl"></i> @emccormick @linkedin</a> -->
     </div>
