@@ -15,7 +15,7 @@ describe('Links component', () => {
   });
 
   it('should define the correct number of social links', () => {
-    expect(vm.findAll('.social-links > a').length).toBe(5);
+    expect(vm.findAll('.social-links > a').length).toBe(4);
   });
 
   it('should include a GitHub user link', () => {
@@ -23,6 +23,6 @@ describe('Links component', () => {
   });
 
   it('should define the correct number of links', () => {
-    expect(vm.findAll('.link-of-links').length).toBe(6);
+    expect(vm.findAll('.link-of-links').length).toBe(5);
   });
 });
