@@ -51,9 +51,9 @@ export default {
     return {
       links: [
         {
-          title: 'blog',
+          title: 'dev|blog',
           href: 'https://edm00se.io/',
-          descrip: `chronicles in software development`
+          descrip: `archived, the chronicles in software development across a number of platforms, frameworks, and topics`
         },
         {
           title: 'misc',
