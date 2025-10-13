@@ -1,38 +1,38 @@
 {
   "index.html": {
-    "file": "assets/index-B1PmIZ-4.js",
+    "file": "assets/index-DbAYldm5.js",
     "name": "index",
     "src": "index.html",
     "isEntry": true,
     "css": [
-      "assets/index-BZGGN1Pw.css"
+      "assets/index-DMkjQfrl.css"
     ],
     "assets": [
-      "assets/remixicon-BVJ9S1ev.eot",
-      "assets/remixicon-BVvFtaex.woff2",
-      "assets/remixicon-BBpe-Xu7.woff",
-      "assets/remixicon-CfJD46dY.ttf",
-      "assets/remixicon-C2wQ2gtc.svg"
+      "assets/remixicon-D5XJLTJH.eot",
+      "assets/remixicon-BDfE_iBv.woff2",
+      "assets/remixicon-B6RyWYTT.woff",
+      "assets/remixicon-B1j7v5Pq.ttf",
+      "assets/remixicon-DS68KM4N.svg"
     ]
   },
   "node_modules/remixicon/fonts/remixicon.eot": {
-    "file": "assets/remixicon-BVJ9S1ev.eot",
+    "file": "assets/remixicon-D5XJLTJH.eot",
     "src": "node_modules/remixicon/fonts/remixicon.eot"
   },
   "node_modules/remixicon/fonts/remixicon.svg": {
-    "file": "assets/remixicon-C2wQ2gtc.svg",
+    "file": "assets/remixicon-DS68KM4N.svg",
     "src": "node_modules/remixicon/fonts/remixicon.svg"
   },
   "node_modules/remixicon/fonts/remixicon.ttf": {
-    "file": "assets/remixicon-CfJD46dY.ttf",
+    "file": "assets/remixicon-B1j7v5Pq.ttf",
     "src": "node_modules/remixicon/fonts/remixicon.ttf"
   },
   "node_modules/remixicon/fonts/remixicon.woff": {
-    "file": "assets/remixicon-BBpe-Xu7.woff",
+    "file": "assets/remixicon-B6RyWYTT.woff",
     "src": "node_modules/remixicon/fonts/remixicon.woff"
   },
   "node_modules/remixicon/fonts/remixicon.woff2": {
-    "file": "assets/remixicon-BVvFtaex.woff2",
+    "file": "assets/remixicon-BDfE_iBv.woff2",
     "src": "node_modules/remixicon/fonts/remixicon.woff2"
   }
 }
