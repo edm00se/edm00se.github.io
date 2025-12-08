@@ -28,7 +28,7 @@
     "rimraf": "^6.1.2",
     "sass": "^1.94.2",
     "vite": "^7.2.6",
-    "vitest": "^4.0.3"
+    "vitest": "^4.0.15"
   },
   "private": false,
   "license": "MIT",
