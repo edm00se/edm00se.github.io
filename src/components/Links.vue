@@ -9,9 +9,9 @@
       <!-- <a href="https://www.linkedin.com/in/emccormick"><i class="ri-linkedin-box-fill ri-xl"></i> @emccormick @linkedin</a> -->
     </div>
     <hr class="link-sep" />
-    <div class="link" v-for="link in links" :key="link.href">
+    <div class="link" v-for="link in links" :key="link.href" :class="{ retired: link.retired }">
       <a class="link-of-links" :href="link.href">
-        <h3>{{ link.title }}</h3>
+        <h3>{{ link.title }} <span v-if="link.retired" class="retired-badge">retired</span></h3>
         {{ link.descrip }}
       </a>
     </div>
@@ -51,16 +51,6 @@ export default {
     return {
       links: [
         {
-          title: 'dev|blog',
-          href: 'https://edm00se.io/',
-          descrip: `archived, the chronicles in software development across a number of platforms, frameworks, and topics`
-        },
-        {
-          title: 'misc',
-          href: 'https://misc.edm00se.codes/',
-          descrip: `micro-blog for non-software things`
-        },
-        {
           title: 'awesome board games',
           href: 'https://awesomeboard.games/',
           descrip: `an awesome list for board games`
@@ -69,11 +59,6 @@ export default {
           title: 'demos',
           href: '/demos/',
           descrip: `home to one-off demos`
-        },
-        {
-          title: 'uses',
-          href: '/uses/',
-          descrip: `home to my /uses info`
         },
         {
           title: 'ama',
@@ -90,6 +75,24 @@ export default {
         //   href: 'https://github.com/edm00se/parcel-plugin-goodie-bag/',
         //   descrip: `provides the Promise and fetch goodies needed for IE(11) support w/ parcel bundle loading`
         // },
+        {
+          title: 'dev|blog',
+          href: 'https://edm00se.io/',
+          descrip: `archived, the chronicles in software development across a number of platforms, frameworks, and topics`,
+          retired: true
+        },
+        {
+          title: 'misc',
+          href: 'https://misc.edm00se.codes/',
+          descrip: `micro-blog for non-software things`,
+          retired: true
+        },
+        {
+          title: 'uses',
+          href: '/uses/',
+          descrip: `home to my /uses info`,
+          retired: true
+        }
       ]
     };
   }
@@ -164,9 +167,29 @@ a.link-of-links.hover:before {
   animation-fill-mode: both;
   animation-duration: 0.5s;
 }
+.link.retired a.link-of-links {
+  opacity: 0.6;
+  color: #666;
+}
+.link.retired a.link-of-links:hover,
+.link.retired a.link-of-links.hover {
+  color: #d07922;
+}
 .link-of-links {
   display: block;
   text-decoration: none;
+}
+
+.retired-badge {
+  display: inline-block;
+  margin-left: 0.5em;
+  padding: 0.15em 0.4em;
+  background-color: #d07922;
+  color: white;
+  border-radius: 0.25em;
+  font-size: 0.65em;
+  font-weight: bold;
+  letter-spacing: 0.05em;
 }
 
 $animationDelay: 1;
