@@ -11,13 +11,11 @@ permissions:
   pull-requests: write
   checks: read
 
+concurrency:
+  group: upgrade-dependencies
+  cancel-in-progress: true
+
 jobs:
   combine-prs:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: combine-prs
-        id: combine-prs
-        uses: github/combine-prs@v5.2.0
-        with:
-          labels: combined-pr # Optional: add a label to the combined PR
+    uses: edm00se/edm00se/.github/workflows/combine-prs.yml@master
+    secrets: inherit
