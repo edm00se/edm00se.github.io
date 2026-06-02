@@ -20,7 +20,7 @@
   "devDependencies": {
     "@vitejs/plugin-vue": "^6.0.7",
     "@vitest/coverage-v8": "^4.1.2",
-    "@vue/compiler-sfc": "^3.4.24",
+    "@vue/compiler-sfc": "^3.5.35",
     "@vue/test-utils": "^2.4.10",
     "axios": "^1.16.1",
     "jsdom": "^29.1.1",
