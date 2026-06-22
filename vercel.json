@@ -1,7 +1,6 @@
 {
   "version": 2,
   "name": "edm00se.codes",
-  "public": true,
   "builds": [{ "src": "package.json", "use": "@vercel/static-build" }],
   "alias": "codes.edm00se.vercel.app",
   "cleanUrls": true,
