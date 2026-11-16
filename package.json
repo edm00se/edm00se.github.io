@@ -13,17 +13,17 @@
     "test:coverage": "vitest run --coverage"
   },
   "dependencies": {
-    "postcss": "^8.5.32",
+    "postcss": "^8.5.33",
     "remixicon": "^4.9.1",
     "vue": "^3.5.45"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^6.0.10",
+    "@vitejs/plugin-vue": "^6.0.11",
     "@vitest/coverage-v8": "^5.0.1",
     "@vue/compiler-sfc": "^3.4.24",
-    "@vue/test-utils": "^2.5.1",
+    "@vue/test-utils": "^2.6.0",
     "axios": "^1.21.1",
-    "jsdom": "^31.0.0",
+    "jsdom": "^31.0.1",
     "npm-run-all": "^4.1.5",
     "rimraf": "^6.1.4",
     "sass": "^1.108.2",
